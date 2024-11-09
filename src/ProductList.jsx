@@ -291,6 +291,8 @@ const handlePlantsClick = (e) => {
     </div>
     );
 }
+const [addedToCart, setAddedToCart] = useState({});
+
 const handleAddToCart = (product)=>{
     dispatch(addItem(product));
     setAddedToCart((prevState)=>({
